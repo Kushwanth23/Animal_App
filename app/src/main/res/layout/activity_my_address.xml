@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.MyAddressActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/detail_menu"
+        app:title="My Address" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/acc_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.087"
+                app:layout_constraintWidth_percent=".8" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_pin"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+            <EditText
+                android:id="@+id/acc_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_name"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+            <EditText
+                android:id="@+id/acc_pin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Pin Code"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_state"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+
+            <EditText
+                android:id="@+id/acc_add1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Address 1"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_phone"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+            <EditText
+                android:id="@+id/acc_add2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Address 2"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_add1"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+            <EditText
+                android:id="@+id/acc_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="State"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.395"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/acc_add2"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent=".8" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

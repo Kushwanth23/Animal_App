@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.home.AnimalDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="Animal Details" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/animalImage"
+            style="@style/CircularImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/darker_gray"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animalImage">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/animal_names"/>
+
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_centerHorizontal="true"
+                    android:text="Animal Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="55dp"/>
+
+                <TextView
+                    android:id="@+id/animalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtname"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:layout_marginTop="3dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/animal_age"/>
+
+                <TextView
+                    android:id="@+id/txtage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Animal Age"
+                    android:textSize="20sp"
+                    android:layout_marginTop="55dp" />
+
+                <TextView
+                    android:id="@+id/animalAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtage"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="Age"
+                    android:textSize="20sp"
+                    android:layout_marginTop="3dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay1">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/animal_type"/>
+
+                    <TextView
+                        android:id="@+id/txttype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Animal Type"
+                        android:textSize="20sp"
+                        android:layout_marginTop="55dp" />
+
+                    <TextView
+                        android:id="@+id/animalType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txttype"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Type"
+                        android:textSize="20sp"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/animal_gender"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtgender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Animal Gender"
+                        android:textSize="20sp"
+                        android:layout_marginTop="55dp"/>
+
+                    <TextView
+                        android:id="@+id/animalgender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtgender"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Gender"
+                        android:textSize="20sp"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_below="@id/lay2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/darker_gray"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSaveQRCode"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Save QR Code"
+            android:background="@color/white"
+            android:layout_below="@+id/qrCodeImageView"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/animalName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Name"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_columnWeight="1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/animalAge"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Age"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_columnWeight="1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/animalType"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Type"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_columnWeight="1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/animalgender"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="ID: N/A"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_columnWeight="1" />-->
+
+
+
+
+    <!-- Add this Button element after the ImageView in your RelativeLayout -->
+
+
+</LinearLayout>

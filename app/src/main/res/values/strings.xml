@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fur Buddy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="select_an_animal_hint">Select an Animal</string>
+    <string name="description">
+        If you have any issues regarding our app or any updations needed please contact the administrator regards your issue.
+    </string>
+</resources>

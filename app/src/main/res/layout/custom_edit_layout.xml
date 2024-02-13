@@ -1,0 +1,5 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editButton"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:background="@drawable/baseline_edit_24"/>

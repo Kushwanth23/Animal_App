@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="animal_types">
+        <item>Cows</item>
+        <item>Calf</item>
+        <item>Buffalo</item>
+        <item>Dogs</item>
+        <item>Sheep</item>
+        <item>Goat</item>
+    </string-array>
+</resources>

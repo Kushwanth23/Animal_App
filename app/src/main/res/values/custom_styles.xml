@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CircularImageView">
+        <item name="shapeAppearanceOverlay">@style/CircularShapeAppearanceOverlay</item>
+    </style>
+
+    <style name="CircularShapeAppearanceOverlay">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="SpinnerTextStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:fontFamily">@font/actor</item>
+        <!-- Add any other styling attributes you want to customize -->
+    </style>
+
+
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/round_bk3"
+            android:padding="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_image"
+                style="@style/CircularImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="Kushwanth Medasani"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:includeFontPadding="false"
+                android:text="kushwanth_medasani"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linera1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-70dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:cardBackgroundColor="#F9F6EE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:id="@+id/card1">
+
+                <RelativeLayout
+                    android:id="@+id/relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/account"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Account"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"
+                        />
+
+                    <Button
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/account"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/sharp_location_on_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="My Address"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="-20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                app:cardBackgroundColor="#F9F6EE"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/notifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_notifications_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Notifications"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                    <Button
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/notifications"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_key_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Password"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                    <Button
+                        android:id="@+id/language"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/password"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_language_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Language"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                    <Button
+                        android:id="@+id/aboutapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/language"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_info_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="About App"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                    <Button
+                        android:id="@+id/contact_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/aboutapp"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_contact_support_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Contact"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/contact_us"
+                        android:layout_marginTop="-10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/baseline_logout_24"
+                        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                        android:includeFontPadding="false"
+                        android:text="Logout"
+                        android:textSize="20sp"
+                        android:textColor="#4d4d4d"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

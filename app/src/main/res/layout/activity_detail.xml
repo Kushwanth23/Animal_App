@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:menu="@menu/edit_memu_animal_data_display"
+        app:title="Animal Details" />
+
+    <ImageView
+        android:id="@+id/animal_image"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/animals1" />
+
+
+    <RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/vie_bg">
+
+        <TextView
+            android:id="@id/animal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/paytone_one"
+            android:text="Animal"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/animal_name"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/re1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/anim_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:includeFontPadding="false"
+                    android:text="Gender"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/animal_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="50dp"
+                    android:includeFontPadding="false"
+                    android:text="Gender"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/re1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/anim_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:includeFontPadding="false"
+                    android:text="Type"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/animal_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:includeFontPadding="false"
+                    android:text="Type"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/anim_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_below="@+id/re2"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anim_des"
+                android:text="aaaa"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/animal_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/animal_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/paytone_one"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:text="10"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

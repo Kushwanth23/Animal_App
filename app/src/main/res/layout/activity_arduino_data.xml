@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Arduino.ArduinoDataActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:title="Animal Stats" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/animalImage"
+            style="@style/CircularImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/darker_gray"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardElevation="10dp"
+            android:layout_toRightOf="@+id/animalImage"
+            android:layout_alignTop="@+id/animalImage"
+            android:layout_alignBottom="@+id/animalImage"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/animal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="Animal Name"
+                    android:textSize="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/animal_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/animal_name"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:text="Age"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/animal_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/animal_age"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:text="Type"
+                    android:textSize="20sp"
+                    android:layout_alignRight="@+id/animal_name"
+                    android:layout_alignTop="@+id/animal_age"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/animalImage">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/animal_names"/>
+
+                    <TextView
+                        android:id="@+id/txtheartrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:layout_centerHorizontal="true"
+                        android:text="Heart Rate"
+                        android:textSize="20sp"
+                        android:layout_marginTop="55dp"/>
+
+                    <TextView
+                        android:id="@+id/heartRateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtheartrate"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="120"
+                        android:textSize="20sp"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/animal_age"/>
+
+                    <TextView
+                        android:id="@+id/txtspo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="SPO2"
+                        android:textSize="20sp"
+                        android:layout_marginTop="55dp" />
+
+                    <TextView
+                        android:id="@+id/spo2TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtspo2"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="95"
+                        android:textSize="20sp"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/animal_type"/>
+
+                    <TextView
+                        android:id="@+id/txttemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="Temperature"
+                        android:textSize="18sp"
+                        android:layout_marginTop="55dp" />
+
+                    <TextView
+                        android:id="@+id/temperatureTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txttemp"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="96"
+                        android:textSize="20sp"
+                        android:layout_marginTop="3dp"/>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
